@@ -2,21 +2,12 @@ import textwrap
 
 
 class Message:
-    """
-    Object for this class store a single message (about program execution).
-    This messages sometimes defines the program execution.
-    """
-
     def __init__(self, text, color=(255, 255, 255)):
         self.text = text
         self.color = color
 
 
 class MessageLog:
-    """
-    The object of this class stores all messages for further displaying to a player.
-    """
-
     def __init__(self, x, width, height):
         self.messages = []
         self.x = x
@@ -24,6 +15,7 @@ class MessageLog:
         self.height = height
 
     def add_message(self, message):
+        print(message)
         # Split the message if necessary, among multiple lines
         new_msg_lines = textwrap.wrap(message.text, self.width)
 

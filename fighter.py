@@ -2,9 +2,6 @@ from game_messages import Message
 
 
 class Fighter:
-    """
-    This is an interface for any entity that is able to fight.
-    """
 
     def __init__(self, hp, defense, power):
         self.max_hp = hp
