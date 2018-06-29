@@ -2,6 +2,11 @@ from game_messages import Message
 
 
 class Inventory:
+    """
+    This is class that stores all items of a player.
+    Player's backpack.
+    """
+
     def __init__(self, capacity):
         self.capacity = capacity
         self.items = []

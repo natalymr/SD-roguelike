@@ -1,4 +1,7 @@
 class BasicMonster:
+    """
+    This is an interface for ai-monsters.
+    """
 
     def take_turn(self, target, game_map, entities):
         """

@@ -9,12 +9,20 @@ from render_functions import RenderOrder
 
 
 class GameMap(Map):
+    """
+    Map that stores explored part.
+    """
+
     def __init__(self, width, height):
         super().__init__(width, height)
         self.explored = [[False for y in range(height)] for x in range(width)]
 
 
 class Rect:
+    """
+    Base class for one room.
+    """
+
     def __init__(self, x, y, w, h):
         self.x1 = x
         self.y1 = y
