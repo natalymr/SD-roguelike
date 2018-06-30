@@ -4,3 +4,4 @@ This repo contains the realization of a console game called Roguelike that was m
 
 The base of this code was this resourse
 > http://rogueliketutorials.com/libtcod/1
+
